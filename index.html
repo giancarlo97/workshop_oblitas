@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>EXCHANGE</title>
+</head>
+<body>
+
+    <header>
+        
+        <nav>
+            <ul>
+                <li>HOME</li>
+                <li>SERVICIOS</li>
+                <li>UBICACION</li>
+                <a href="pages/contacto.html"><li>Contacto</li></a>
+                <li>QUIENES SOMOS</li>
+
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <section>
+            <h1>EXCHANGE</h1>
+        </section>
+           
+        <form class="formulario">
+            <p>Seleccione la moneda a convertir:</p>
+            <input type="radio" name="cambio" id="uno">Dolar
+            <input type="radio" name="cambio" id="dos">Euro
+            <p>Ingrese un monto</p>
+            <input type="number" id="valor" min="1" max="100000">
+            <input type="button" id="cotizador" value="cotizar" onclick="convertir()">
+        </form>
+    
+        <div class="tabla">
+            <input type="button" id="tabla" value="tablita" onclick="tabla()">
+        </div>
+
+        <div id="contenedor">
+            
+            <div class="divForm">
+                <form class="form" id="formNoControlado">
+                    <input class="input" placeholder="Nombre"/>
+                    <input class="input" placeholder="Apellido"/>
+                    <input class="input" type="number" placeholder="Teléfono"/>
+                    <input class="input" type="password" placeholder="Password"/>
+                    <input class="input repass" type="password" placeholder="Repetir Password"/>
+                    <button class="input" type="submit" id="noControlAccept">Aceptar Interior</button>
+                </form>
+            </div>
+            <div class="divForm">
+                <form class="form" id="formControlado">
+                    <input class="input" placeholder="Nombre"/>
+                    <input class="input" placeholder="Apellido"/>
+                    <input class="input" placeholder="Teléfono"/>
+                    <input class="input" placeholder="Password"/>
+                    <input class="input repass" placeholder="Repetir Password"/>
+                </form>
+                <button class="input" id="controlAccept">Aceptar Exterior</button>
+            </div>
+            <input id="formName" placeholder="Ingrese el nombre del form">
+            <button id="bCreateForm">Crear Form</button>
+            <button id="bDeleteForm">Borrar Form</button>
+            <div id="createForm" class="divForm">
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+
+        <p> Gracias por visitar nuestra pagina, los esperamos.</p>
+        <p> Visite nuestras redes:</p>
+
+        <p>Powed by Giancarlo</p>
+
+    </footer>
+    
+    <script src="javascript/clase4y5.js"></script>
+    <script src="javascript/clase6y7.js"></script>
+    <script src="javascript/clase8y9.js"></script>
+    <script src="javascript/clase10y11.js"></script>
+    
+</body>
+</html>
